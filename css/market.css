@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+} 
+:root {
+  --color2 :#F2A03D ; /**/
+  --color3 :#ff5722 ; /**/
+  --color4 :#A62B1Fc2 ; /**/
+  --covercolor :#0D0D0D ; /*cover*/
+  --maincolor: white ;
+}
+body {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+}
+.body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.nav {
+  width: 320px;
+  background-color: rgba(199, 4, 199, 0.61);
+  padding: 30px 15px;
+  color: rgb(255, 233, 214);
+  height: auto;
+}
+.navhead {
+  font-size: 20px;
+}
+.nav > ul {
+  padding: 5px 50px;
+}
+.tables {
+  list-style-type: disc;
+  transition: 0.5s;
+  margin-top: 5px;
+  font-size: 18px;
+}
+.tables:hover {
+  width: fit-content;
+  background-color: rgba(175, 3, 175, 0.795);
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.continer {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #06060685;
+  padding: 30px 10px;
+}
+.item {
+  width: 250px;
+  height: fit-content;
+  background-color: rgb(163, 72, 72);
+  margin: 10px;
+  border-radius: 12px;
+  color: whitesmoke;
+}
+.item > img {
+  width: 250px;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.item .info {
+  width: 250px;
+  height: 125px;
+  padding: 10px 5px;
+}
+.item .info .infop {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 10px 0px;
+}
+.price {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.machinemarket {
+  display: inline-block;
+  width: fit-content;
+  background-color: rgb(2, 143, 143);
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+  text-decoration: none;
+}
+.amount {
+  background-color: rgb(218, 15, 15);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  float: right;
+}
+.logform {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  left: 100%;
+  position: sticky;
+  z-index: 10;
+  top: 100px;
+}
+.logout {
+  position: sticky;
+  width: fit-content;
+  border-radius: 10px 0 0 10px;
+  padding: 10px 20px;
+  background-color: var(--color3);
+  z-index: 10;
+  top: 100px;
+  left: 100%;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}

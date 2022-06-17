@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+} 
+:root {
+  --color2 :#F2A03D ; /**/
+  --color3 :#F27C38 ; /**/
+  --color4 :#A62B1Fc2 ; /**/
+  --covercolor :#0D0D0D ; /*cover*/
+  --maincolor: white ;
+}
+.comments {
+  background-image: url(../data/pexels-ivan-samkov-4164463.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  padding: 20px 25px;
+  background-color: var(--color2);
+  margin: 40px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.comments .formcomment {
+  width: fit-content;
+  display: grid;
+  margin: 10px;
+  width: 50%;
+  overflow: hidden;
+}
+.comments .formcomment > textarea {
+  max-width: 550px;
+  min-height: 300px;
+  max-height: 300px;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 15px;
+  border: none;
+  overflow: hidden;
+}
+.comments .formcomment > textarea:focus {
+  border: none;
+  outline: none;
+}
+.comments .formcomment > button {
+  width: fit-content;
+  height: fit-content;
+  padding: 15px 25px;
+  background-color: rgba(0, 0, 255, 0.445);
+  border: none;
+  border-radius: 10px;
+  margin: 20px; 
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.comments .formcomment > button:hover {
+  background-color :blue ;
+  cursor: pointer;
+}
+@media (max-width:756px) {
+  .comments .formcomment {
+    width: 100%;
+  }
+  .comments .formcomment > button { 
+    margin: auto;
+  }
+}
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: var(--covercolor);
+  position: absolute;
+  top:100%;
+  left: 0 ;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--maincolor);
+  z-index: 2;
+}
+footer .contact {
+  display: flex;
+  justify-content: space-between;
+  width: 80px;
+  flex-flow: row;
+}
+i:hover:not( :nth-child(2) , :nth-child(3)){
+  color: var(--color4);
+  cursor: pointer;
+}
+@media (max-width:856px) {
+  footer {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 65px;
+    top: 100%;
+  }
+  footer .right {
+    margin: 10px auto;
+  }
+  .thediv {
+    height: 90px;
+    line-height: 90px;
+  }
+}
+@media (max-width:576px) {
+  .comments {
+    padding: 5px 10px;
+  }
+  .formcomment {
+    margin: 0px !important;
+  }
+  .comments .formcomment > button {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+  }
+}

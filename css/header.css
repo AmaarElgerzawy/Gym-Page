@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+} 
+:root {
+  --color2 :#F2A03D ; /**/
+  --color3 :#F27C38 ; /**/
+  --color4 :#A62B1Fc2 ; /**/
+  --covercolor :#0D0D0D ; /*cover*/
+  --maincolor: white ;
+}
+body {
+  position: relative;
+  max-width: 100%;
+  min-width: 100%;
+}
+.header {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  background-color: var(--covercolor);
+  padding: 5px 120px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+.header > .logo {
+  width: 250px;
+  height: fit-content;
+}
+.header .logo span {
+  font-size: 25px;
+  color: var(--maincolor);
+}
+.header .logo i{
+  font-size: 50px;
+  color: var(--color3);
+}
+.header .logo i:hover {
+  color: var(--color4);
+}
+.header .list {
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--maincolor);
+}
+.header .list > li {
+  position: relative;
+}
+.header .list li:hover h3 {
+  color: var(--color2);
+  cursor: pointer;
+}
+.header .list li > ul {
+  display: none;
+}
+.header .list li:last-of-type > ul {
+  display: none;
+  left: -150%;
+}
+.headerliShow {
+  display: flex !important;
+  position: absolute;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  width: 250px;
+  height: fit-content;
+  background-color: var(--color4);
+  color: var(--maincolor);
+  font-size: 30px;
+  padding: 10px;
+  top: 40px;
+  left: -10px;
+  border-top: 3px solid orangered;
+  border-radius: 10px;
+}
+.header .list li > ul > li {
+  width: 100%;
+  padding: 5px 2.5px;
+  border-bottom: 1px solid black;
+  margin: 5px 2.5px;
+}
+.header .list li > ul > li:hover {
+  padding: 7.5px 10px;
+  background-color: #ebb36fa2;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.small {
+  display: none;
+}
+.header .list .servise li h6 i{
+  float: right;
+}
+.headerfreepaidShow {
+  display: flex !important;
+  flex-flow: column;
+  width: 100%;
+  font-size: 18px;
+  transition: 5s;
+}
+.header .list .servise li ul li {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.header .list .servise li ul li:hover {
+  background-color: coral;
+}
+@media (max-width:976px) {
+  .header {
+    padding: 10px 100px;
+  }
+  .header .logo {
+    display: none;
+  }
+  .header .list {
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width:676px) {
+  .header {
+    padding: 5px 20px;
+  }
+  .landing .aboutus .whoare {
+    font-size: 40px !important;
+  }
+  .landing .aboutus .motivation {
+    line-height: 30px;
+  }
+  .small {
+    display: block;
+    color: white;
+    font-size: 48px;
+    cursor: pointer;
+  }
+  .small:hover {
+    color: var(--color3);
+  }
+  .header .logo {
+    display: flex !important;
+    width: fit-content;
+    align-items: baseline;
+  }
+  .list {
+    display: none !important;
+  }
+  .show {
+    display: flex !important;
+    position: absolute;
+    top: 100%;
+    background-color: #ff5722;
+    left: 0;
+    flex-flow: column nowrap !important;
+    padding: 15px;
+  }
+  .show li {
+    width: 100%;
+    margin: 10px 5px;
+    padding: 2.5px;
+  }
+  .show li h3:hover {
+    color:  black !important;
+  } 
+  .show li h3 i {
+    float: right;
+  }
+  .headerliShow {
+    width: 100%;
+    display: block !important;
+    position: initial;
+    background-color: #db383859;
+    margin: 10px auto;
+    border: none;
+  }
+  .headerliShow li{
+    border-bottom: none !important;
+  }
+  .headerliShow li:hover {
+    background-color:#3f51b51a  !important;
+  }
+}

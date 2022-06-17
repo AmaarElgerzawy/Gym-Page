@@ -1,0 +1,423 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+} 
+:root {
+  --color2 :#F2A03D ; /**/
+  --color3 :#ff5722 ; /**/
+  --color4 :#A62B1Fc2 ; /**/
+  --covercolor :#0D0D0D ; /*cover*/
+  --maincolor: white ;
+}
+body {
+  position: relative;
+  min-width: 100%;
+  min-height: 100%;
+}
+.username {
+  color: #ff5722;
+}
+.landing {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../data/pexels-victor-freitas-841130.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing .aboutus {
+  width: 500px;
+  height: fit-content;
+  padding: 10px 25px;
+  background-color: #265f66cc;
+  position: absolute;
+  top: 25vh;
+  line-height: 50px;
+}
+.landing .aboutus .whoare {
+  font-size: 50px;
+  text-align: center;
+}
+.landing .aboutus .motivation {
+  font-size: 20px;
+  text-align: center;
+}
+.landing .aboutus .thewhoare {
+  line-height: 25px;
+}
+.landing .aboutus .thewhoare > span {
+  float: right;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff5722;
+  line-height: 70px;
+}
+@media (max-width:876px) {
+  body {
+      padding: 0px;
+    }
+} 
+@media (max-width:576px) {
+  .landing {
+    background-image: url(../data/WhatsApp\ Image\ 2021-10-16\ at\ 3.56.28\ PM.jpeg);
+  }
+  .landing .aboutus {
+    width: 100%;
+    top: 15vh;
+  }
+}
+.about {
+  width: 100%;
+  margin: 30px 0px;
+}
+.about .abouthead {
+  text-align: center;
+  font-size: 60px;
+  position: relative;
+}
+.about .underservhead {
+  margin: 0px auto;
+  text-align: center;
+  font-size: 15px;
+  color: #68415a;
+  font-weight: bold;
+  font-style: italic;
+}
+.about .abouthead::before {
+  content: "";
+  position: absolute;
+  width: 219px;
+  height: 5px;
+  background-color: black;
+  top: 100%;
+}
+.about .abouthead::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  top: 90%;
+  border-radius: 50%;
+  border: 5px solid black;
+  left: calc( 50% - 10px );
+}
+.about .free  {
+  background-image: url(../data/wallpaperflare.com_wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: fit-content;
+  margin: 50px 0px;
+  padding: 20px 0px 80px;
+}
+.about .free .freehead {
+  color: white;
+  position: relative;
+  font-size: 25px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  padding: 5px;
+}
+.about .free .freehead::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 5px;
+  background-color: white;
+  top: 100%;
+}
+.about .free .container1 {
+  background-color: #504a4878;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.about .free .container1 div {
+  overflow: hidden;
+  margin: 15px 0px;
+}
+.about .free .container1 div img {
+  width: 420px;
+  height: 200px;
+  perspective: 0px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.about .free .container1 div img:hover {
+  transform: rotate(3deg) scale(1.1);
+}
+.about .free .container1 div .info {
+  width: 420px;
+  padding: 15px;
+  color: #322525;
+  background-color: #8080809e;
+  height: 100px;
+  font-size: 19px;
+  cursor: pointer;
+}
+#machinemarket {
+  display: inline-block;
+  width: fit-content;
+  background-color: rgb(2, 143, 143);
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 18px;
+}
+.about .pro {
+  background-image: url(../data/screen-3.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  width: 100%;
+  height: fit-content;
+  padding: 20px 0px 80px;
+}
+.about .pro .paidhead {
+  color: white;
+  position: relative;
+  font-size: 25px;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.about .pro .paidhead::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 5px;
+  background-color: white;
+  top: 100%;
+}
+.about .pro .container2 {
+  background-color: #504a4878;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.about .pro .container2 div {
+  overflow: hidden;
+  margin: 15px 0px;
+}
+.about .pro .container2 div img {
+  width: 270px;
+  height: 200px;
+  perspective: 0px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.about .pro .container2 div img:hover {
+  transform: rotate(3deg) scale(1.1);
+}
+.about .pro .container2 div .info {
+  width: 270px;
+  padding: 15px;
+  color: #322525;
+  background-color: #8080809e;
+  height: 100px;
+  font-size: 19px;
+  cursor: pointer;
+}
+@media (max-width:576px) {
+  .container1 {
+    padding: 5px;
+  }
+  .about .free .container1 div img {
+    width: 270px;
+  }
+  .about .free .container1 div .info {
+    width: 270px;
+    height: 120px;
+  }
+}
+.sport {
+  background-image: url(../data/pexels-victor-freitas-791763.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  min-width: 100%;
+  max-width: 100%;
+  height: fit-content;
+  margin: 200px 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  padding: 60px 0px;
+}
+.sportscontainer {
+  padding: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  background-color: #504a4878;
+  overflow: hidden;
+}
+.sport .sportscontainer > div {
+  margin: 60px 20px;
+  position: relative;
+}
+.sport .sportscontainer > div > img {
+  width: 270px;
+  height: 270px;
+}
+.sport .sportscontainer > div > p {
+  width: 270px;
+  height: 100px;
+  padding: 5px 10px;
+  color: #322525;
+  background-color: #8080809e;
+  height: 100px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.sport .sporthead {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  font-size: 60px;
+  margin: 0px 0px;
+  position: absolute;
+  top: -150px;
+  left: 0;
+  padding: 5px;
+}
+.sport .sporthead::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 5px;
+  background-color: black;
+  top: 100%;
+}
+.sport .sporthead::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  top: 90%;
+  border-radius: 50%;
+  border: 5px solid black;
+  left: calc( 50% - 10px );
+}
+.coomentshow .comenthead {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  font-size: 60px;
+  margin: 0px 0px;
+  position: absolute;
+  top: -150px;
+  left: 0;
+  padding: 5px;
+}
+.coomentshow .comenthead::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 5px;
+  background-color: black;
+  top: 100%;
+}
+.coomentshow .comenthead::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  top: 90%;
+  border-radius: 50%;
+  border: 5px solid black;
+  left: calc( 50% - 10px );
+}
+.coomentshow {
+  width: 100%;
+  height: fit-content;
+  background-color: #6e7862;
+  position: relative;
+  padding: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+.coomentshow .orgcoment {
+  display: block;
+  width: fit-content;
+  background-color: #7b8b67;
+  height: fit-content;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: white;
+}
+.coomentshow .orgcoment .name {
+  width: 100%;
+  height: fit-content;
+  color: #7b8b67;
+  font-size: 25px;
+  font-weight: 600;
+}
+.coomentshow .orgcoment .email {
+  width: 100%;
+  height: fit-content;
+  color: rgb(221, 221, 221);
+  font-size:15px;
+}
+.coomentshow .orgcoment .comment {
+  width: fit-content;
+  height: fit-content;
+  color: #7b8b67;
+  font-size:18px;
+  overflow-wrap: break-word;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: lighter;
+}
+.coomentshow .orgcoment .time {
+  float: right;
+  color: red;
+}
+@media (max-width:576px) {
+  .coomentshow {
+    padding: 10px;
+  }
+  .coomentshow .orgcoment {
+    width: 100%;
+  }
+}
+.logform {
+  left: 100%;
+  position: sticky;
+  z-index: 10;
+  top: 100px;
+}
+.logout {
+  position: sticky;
+  width: fit-content;
+  border-radius: 10px 0 0 10px;
+  padding: 10px 20px;
+  background-color: var(--color3);
+  z-index: 10;
+  top: 100px;
+  left: 100%;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
